@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-card {
+  background: #fff;
+  padding: 40px;
+  width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard-card h1 {
+  margin-bottom: 10px;
+}
+
+.dashboard-text {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e53e3e;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #c53030;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
